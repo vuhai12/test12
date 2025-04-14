@@ -1,0 +1,44 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply m-auto max-w-[1127px];
+  }
+}
+
+@layer utilities {
+  .bg-section1 {
+    background-image: url("@/assets/images/banner1.jpeg"),
+      url("@/assets/images/banner1-gradient.svg");
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+  .bg-section2 {
+    background-image: url("@/assets/images/banner2.jpeg"),
+      url("@/assets/images/banner2-overlay.svg");
+    background-size: cover; /* Đảm bảo ảnh phủ toàn bộ chiều rộng và chiều cao */
+    background-position: center; /* Căn giữa ảnh trong phần tử */
+    background-blend-mode: overlay;
+    height: 413px; /* Đặt chiều cao cố định của phần tử */
+    width: 100%; /* Chiều rộng của phần tử sẽ là 100% của phần tử cha */
+  }
+
+  .bg-section3 {
+    background-image: url("@/assets/images/banner3.jpeg"),
+      url("@/assets/images/banner3-overlay.svg");
+    background-size: cover; /* Đảm bảo ảnh phủ toàn bộ chiều rộng và chiều cao */
+    background-position: center; /* Căn giữa ảnh trong phần tử */
+    background-blend-mode: overlay;
+    height: 547px; /* Đặt chiều cao cố định của phần tử */
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 100%; /* Chiều rộng của phần tử sẽ là 100% của phần tử cha */
+  }
+}
