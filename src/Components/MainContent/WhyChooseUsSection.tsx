@@ -4,7 +4,7 @@ import Design from "@/assets/images/design.svg";
 import IconDesign from "@/assets/images/design-icon.svg";
 import IconService from "@/assets/images/service-icon.svg";
 import Service from "@/assets/images/service.svg";
-import Task from "@/assets/images/task-icon.svg";
+import { ChooseUsSectionDatas } from "../Shared/Consts";
 
 const WhyChooseUsSection = () => {
   return (
@@ -85,7 +85,25 @@ const WhyChooseUsSection = () => {
           </div>
 
           <div className="flex gap-[20px] flex-wrap mt-[50px]">
-            <div className="w-[360px] h-[256px] relative">
+            {ChooseUsSectionDatas.map((ChooseUsSection) => {
+              return (
+                <div className="w-[360px] h-[256px] relative">
+                  <p className="text-[#E7E7E7] text-[128px] font-bold leading-[120%] tracking-[0%]">
+                    {ChooseUsSection.number}
+                  </p>
+                  <div className="absolute top-[80px] left-[100px]">
+                    <img src={ChooseUsSection.content.image} />
+                    <p className="text-[#FAB107] font-bold text-[20px] leading-[130%] tracking-[0%]">
+                      {ChooseUsSection.content.title}
+                    </p>
+                    <p className="font-normal w-[264px] text-[14px] leading-[150%] tracking-[0%] text-[#262626]">
+                      {ChooseUsSection.content.text}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+            {/* <div className="w-[360px] h-[256px] relative">
               <p className="text-[#E7E7E7] text-[128px] font-bold leading-[120%] tracking-[0%]">
                 01
               </p>
@@ -160,7 +178,7 @@ const WhyChooseUsSection = () => {
                   typesetting industry.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
