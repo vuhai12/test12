@@ -19,7 +19,7 @@ const RequestQuoteSection = () => {
               </label>
               <input
                 placeholder="Full name"
-                className="w-[525px] h-[40px] border-[0.5px] border-[#BDBDBD] pt-[9px] pl-[12px] text-[14px] text-[#262626]"
+                className="w-[525px] h-[40px]  border-[0.5px] border-[#BDBDBD] pl-[12px] text-[14px] text-[#262626]"
               />
             </div>
             <div className="flex flex-col gap-[6px]">
@@ -28,7 +28,7 @@ const RequestQuoteSection = () => {
               </label>
               <input
                 placeholder="Phone number"
-                className="w-[525px] h-[40px] border-[0.5px] border-[#BDBDBD] pt-[9px] pl-[12px] text-[14px] text-[#262626]"
+                className="w-[525px] h-[40px] border-[0.5px] border-[#BDBDBD]  pl-[12px] text-[14px] text-[#262626]"
               />
             </div>
             <div className="flex flex-col gap-[6px]">
@@ -37,7 +37,7 @@ const RequestQuoteSection = () => {
               </label>
               <input
                 placeholder="Your email"
-                className="w-[525px] h-[40px] border-[0.5px] border-[#BDBDBD] pt-[9px] pl-[12px] text-[14px] text-[#262626]"
+                className="w-[525px] h-[40px] border-[0.5px] border-[#BDBDBD]  pl-[12px] text-[14px] text-[#262626]"
               />
             </div>
             <div className="flex flex-col gap-[6px]">
@@ -46,7 +46,7 @@ const RequestQuoteSection = () => {
               </label>
               <input
                 placeholder="Your message"
-                className="w-[525px] h-[40px] border-[0.5px] border-[#BDBDBD] pt-[9px] pl-[12px] text-[14px] text-[#262626]"
+                className="w-[525px] h-[40px] border-[0.5px] border-[#BDBDBD]  pl-[12px] text-[14px] text-[#262626]"
               />
             </div>
             <button className="w-[160px] flex justify-center gap-3 items-center text-white h-[36px] bg-[#FAB107] ml-auto">
