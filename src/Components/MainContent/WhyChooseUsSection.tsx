@@ -46,7 +46,7 @@ const WhyChooseUsSection = () => {
               02
             </p>
             <div className="w-[456px]">
-              <div className="flex">
+              <div className="flex items-center gap-[24px]">
                 <img src={IconDesign} alt="IconDesign" />
                 <p className="text-[32px] text-[#FAB107] font-bold leading-[130%] tracking-[0%]">
                   Our up-to-date design
