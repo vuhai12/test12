@@ -1,4 +1,5 @@
 import { SectionWepromiseData } from "../../Shared/Consts";
+import PromiseData from "./PromiseData";
 
 const CommitmentSection = () => {
   return (
@@ -11,25 +12,10 @@ const CommitmentSection = () => {
           <div className="flex justify-center gap-[100px]">
             {SectionWepromiseData.map((SectionWepromise) => {
               return (
-                <div className="w-[288px]" key={SectionWepromise.id}>
-                  <div className="flex h-full items-center gap-3">
-                    <img
-                      src={SectionWepromise.img}
-                      className="w-[80px] h-[80px]"
-                    />
-                    <div>
-                      <p className="text-[48px] font-semibold leading-[150%] tracking-[0%]">
-                        {SectionWepromise.title}
-                      </p>
-                      <p className="text-[20px] font-bold leading-[130%] tracking-[0%]">
-                        {SectionWepromise.heading}
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-[14px] font-normal leading-[150%] tracking-[0%]">
-                    {SectionWepromise.texts}
-                  </p>
-                </div>
+                <PromiseData
+                  key={SectionWepromise.id}
+                  promiseData={SectionWepromise}
+                />
               );
             })}
           </div>
