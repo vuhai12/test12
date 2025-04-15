@@ -14,6 +14,15 @@ import IconService from "@/assets/images/service-icon.svg";
 import Service from "@/assets/images/service.svg";
 
 import Task from "@/assets/images/task-icon.svg";
+import Logo from "@/assets/images/logo.svg";
+
+import IconPhoneFooter from "@/assets/images/icon-phone-footer.svg";
+import IconFaxFooter from "@/assets/images/icon-fax-footer.svg";
+import IconMailFooter from "@/assets/images/icon-mail-footer.svg";
+import IconYoutube from "@/assets/images/icon-youtube.svg";
+import IconFacebook from "@/assets/images/icon-facebook.svg";
+import ImageCompany from "@/assets/images/img-company.svg";
+import ImageMap from "@/assets/images/img-map.svg";
 
 export const links = [
   "Home",
@@ -154,3 +163,46 @@ export const SectionWhyChooseUsData1 = [
     },
   },
 ];
+
+export const FooterDatas = {
+  logo: Logo,
+  slogan:
+    "NGCONS provides professional home design and construction services in Hanoi, Vietnam.",
+  title: "Office",
+  address:
+    "No. 3, 29/70/19 Khuong Ha Street, Thanh Xuan District, Hanoi, Vietnam",
+  contact: [
+    {
+      img: IconPhoneFooter,
+      name: "Phone",
+      text: "0922063999",
+    },
+    {
+      img: IconFaxFooter,
+      name: "Fax",
+      text: "(+84) 922 063 999",
+    },
+    {
+      img: IconMailFooter,
+      name: "Email",
+      text: "ngcons.connection@gmail.com",
+    },
+  ],
+  social: {
+    title: "Follow Us On",
+    imgs: [
+      { name: "IconYoutube", img: IconYoutube },
+      { name: "IconFacebook", img: IconFacebook },
+    ],
+  },
+  officeType: [
+    {
+      name: "Company office",
+      img: ImageCompany,
+    },
+    {
+      name: "Branch office",
+      img: ImageMap,
+    },
+  ],
+};
