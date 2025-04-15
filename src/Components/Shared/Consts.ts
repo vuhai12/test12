@@ -24,8 +24,9 @@ export const links = [
   "Contact",
 ];
 
-export const BusinessOverviewData = [
+export const SectionWepromiseData = [
   {
+    id: 1,
     img: IconBussiness,
     title: " 12 years",
     heading: "in business",
@@ -33,6 +34,7 @@ export const BusinessOverviewData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
+    id: 2,
     img: IconCustomer,
     title: "200+",
     heading: "happy customers",
@@ -40,6 +42,7 @@ export const BusinessOverviewData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
+    id: 3,
     img: IconProject,
     title: " 300+",
     heading: "completed projects",

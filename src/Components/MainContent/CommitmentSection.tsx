@@ -1,4 +1,4 @@
-import { BusinessOverviewData } from "../Shared/Consts";
+import { SectionWepromiseData } from "../Shared/Consts";
 
 const CommitmentSection = () => {
   return (
@@ -9,25 +9,25 @@ const CommitmentSection = () => {
             We promise
           </p>
           <div className="flex justify-center gap-[100px]">
-            {BusinessOverviewData.map((BusinessOverview) => {
+            {SectionWepromiseData.map((SectionWepromise) => {
               return (
-                <div className="w-[288px]">
+                <div className="w-[288px]" key={SectionWepromise.id}>
                   <div className="flex h-full items-center gap-3">
                     <img
-                      src={BusinessOverview.img}
+                      src={SectionWepromise.img}
                       className="w-[80px] h-[80px]"
                     />
                     <div>
                       <p className="text-[48px] font-semibold leading-[150%] tracking-[0%]">
-                        {BusinessOverview.title}
+                        {SectionWepromise.title}
                       </p>
                       <p className="text-[20px] font-bold leading-[130%] tracking-[0%]">
-                        {BusinessOverview.heading}
+                        {SectionWepromise.heading}
                       </p>
                     </div>
                   </div>
                   <p className="text-[14px] font-normal leading-[150%] tracking-[0%]">
-                    {BusinessOverview.texts}
+                    {SectionWepromise.texts}
                   </p>
                 </div>
               );
