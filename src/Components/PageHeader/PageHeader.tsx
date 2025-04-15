@@ -1,8 +1,8 @@
-import ArrowDown from "@/assets/images/arrow-down.png";
 import ArrowRight from "@/assets/images/arrow-right.svg";
 import Logo from "@/assets/images/logo.svg";
 import TopBar from "./TopBar";
 import { links } from "../Shared/Consts";
+import Link from "./Link";
 
 const PageHeader = () => {
   return (
@@ -12,16 +12,7 @@ const PageHeader = () => {
         <img className="w-[264px] h-[40px]" src={Logo} alt="logo" />
         <ul className="flex gap-[40px] text-white font-bold text-[16px] leading-[140%] tracking-[0%]">
           {links.map((link) => (
-            <li className="flex">
-              {link}
-              {link.toLowerCase() === "service" && (
-                <img
-                  src={ArrowDown}
-                  alt="ArrowDown"
-                  className="w-[24px] h-[24px] ml-3"
-                />
-              )}
-            </li>
+            <Link page={link} />
           ))}
         </ul>
       </div>
