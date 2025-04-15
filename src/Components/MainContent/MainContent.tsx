@@ -1,7 +1,7 @@
-import CommitmentSection from "./CommitmentSection";
-import WhyChooseUsSection from "./WhyChooseUsSection";
-import CustomerReviewsSection from "./CustomerReviewsSection";
-import RequestQuoteSection from "./RequestQuoteSection";
+import CommitmentSection from "./WePromiseSection/WePromiseSection";
+import WhyChooseUsSection from "./WhyChooseUsSection/WhyChooseUsSection";
+import CustomerReviewsSection from "./CustomerReviewsSection/CustomerReviewsSection";
+import RequestQuoteSection from "./RequestQuoteSection/RequestQuoteSection";
 import TopActionBar from "./TopActionBar";
 
 const MainContent = () => {

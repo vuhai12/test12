@@ -1,7 +1,7 @@
 import {
   SectionWhyChooseUsData1,
   SectionWhyChooseUsData2,
-} from "../Shared/Consts";
+} from "../../Shared/Consts";
 
 const WhyChooseUsSection = () => {
   return (

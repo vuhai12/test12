@@ -1,4 +1,4 @@
-import { SectionWepromiseData } from "../Shared/Consts";
+import { SectionWepromiseData } from "../../Shared/Consts";
 
 const CommitmentSection = () => {
   return (
