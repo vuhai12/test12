@@ -4,6 +4,7 @@ import {
 } from "../../Shared/Consts";
 import WhyChooseUsData1 from "./WhyChooseUsData1";
 import WhyChooseUsData2 from "./WhyChooseUsData2";
+import LineDash from "@/assets/images/line-dash.svg";
 
 const WhyChooseUsSection = () => {
   return (
@@ -14,7 +15,10 @@ const WhyChooseUsSection = () => {
         </p>
 
         <div className="relative z-10 flex flex-col gap-[80px]">
-          <div className="absolute left-1/2 top-[160px] bottom-0 border-l h-[620px] border-dashed border-gray-500 z-0"></div>
+          <img
+            src={LineDash}
+            className="absolute object-cover h-[650px] w-[2px] border-none left-1/2 top-[140px] bottom-0 z-0"
+          />
           {SectionWhyChooseUsData1.map((SectionWhyChooseUs) => {
             const isEven = SectionWhyChooseUs.id % 2 === 0;
             return (
