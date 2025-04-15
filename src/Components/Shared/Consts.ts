@@ -6,6 +6,13 @@ import Customer1 from "@/assets/images/customer1.svg";
 import Customer2 from "@/assets/images/customer2.svg";
 import IconStar from "@/assets/images/start-icon.svg";
 
+import IconPeople from "@/assets/images/people-icon.svg";
+import People from "@/assets/images/people.svg";
+import Design from "@/assets/images/design.svg";
+import IconDesign from "@/assets/images/design-icon.svg";
+import IconService from "@/assets/images/service-icon.svg";
+import Service from "@/assets/images/service.svg";
+
 import Task from "@/assets/images/task-icon.svg";
 
 export const links = [
@@ -110,5 +117,35 @@ export const ChooseUsSectionDatas = [
       text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     number: "05",
+  },
+];
+
+export const WhyChooseUsData1 = [
+  {
+    id: 1,
+    img: People,
+    description: {
+      img: IconPeople,
+      title: "Our people",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    },
+  },
+  {
+    id: 2,
+    img: Design,
+    description: {
+      img: IconDesign,
+      title: "Our up-to-date design",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    },
+  },
+  {
+    id: 3,
+    img: Service,
+    description: {
+      img: IconService,
+      title: "Our quality service",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    },
   },
 ];
