@@ -51,8 +51,9 @@ export const SectionWepromiseData = [
   },
 ];
 
-export const CustomReviewDatas = [
+export const SectionCustomReviewDatas = [
   {
+    id: 1,
     img: Customer2,
     imgStar: IconStar,
     name: " Katherine",
@@ -62,6 +63,7 @@ export const CustomReviewDatas = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
   {
+    id: 2,
     img: Customer1,
     imgStar: IconStar,
     name: " Jake",
@@ -72,7 +74,7 @@ export const CustomReviewDatas = [
   },
 ];
 
-export const WhyChooseUsData2 = [
+export const SectionWhyChooseUsData2 = [
   {
     id: 1,
     content: {
@@ -123,7 +125,7 @@ export const WhyChooseUsData2 = [
   },
 ];
 
-export const WhyChooseUsData1 = [
+export const SectionWhyChooseUsData1 = [
   {
     id: 1,
     img: People,

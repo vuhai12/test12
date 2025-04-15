@@ -1,4 +1,7 @@
-import { WhyChooseUsData1, WhyChooseUsData2 } from "../Shared/Consts";
+import {
+  SectionWhyChooseUsData1,
+  SectionWhyChooseUsData2,
+} from "../Shared/Consts";
 
 const WhyChooseUsSection = () => {
   return (
@@ -9,11 +12,11 @@ const WhyChooseUsSection = () => {
             Why choose us?
           </p>
 
-          {WhyChooseUsData1.map((WhyChooseUs) => {
-            const isEven = WhyChooseUs.id % 2 === 0;
+          {SectionWhyChooseUsData1.map((SectionWhyChooseUs) => {
+            const isEven = SectionWhyChooseUs.id % 2 === 0;
             return (
               <div
-                key={WhyChooseUs.id}
+                key={SectionWhyChooseUs.id}
                 className={`flex justify-between items-center ${
                   isEven ? "flex-row-reverse" : ""
                 }`}
@@ -21,47 +24,51 @@ const WhyChooseUsSection = () => {
                 <div className="w-[456px]">
                   <div className="flex items-center gap-[24px]">
                     <img
-                      src={WhyChooseUs.description.img}
+                      src={SectionWhyChooseUs.description.img}
                       alt="IconPeople"
                       className="w-[72px] h-[72px]"
                     />
                     <p className="text-[32px]  text-[#FAB107] font-bold leading-[130%]  tracking-[0%]">
-                      {WhyChooseUs.description.title}
+                      {SectionWhyChooseUs.description.title}
                     </p>
                   </div>
                   <p className="text-[#262626] mt-[10px] text-[14px] font-normal leading-[150%] tracking-[0%]">
-                    {WhyChooseUs.description.text}
+                    {SectionWhyChooseUs.description.text}
                   </p>
                 </div>
                 <p className="bg-[#FAB107] w-[59px] h-[59px] text-[32px] leading-[130%] tracking-[0%] text-white font-bold rounded-full flex items-center justify-center">
-                  {`0${WhyChooseUs.id}`}
+                  {`0${SectionWhyChooseUs.id}`}
                 </p>
 
-                <img src={WhyChooseUs.img} alt="People" className="w-[456px]" />
+                <img
+                  src={SectionWhyChooseUs.img}
+                  alt="People"
+                  className="w-[456px]"
+                />
               </div>
             );
           })}
 
           <div className="flex gap-[20px] flex-wrap mt-[50px]">
-            {WhyChooseUsData2.map((WhyChooseUs) => {
-              if (!WhyChooseUs?.id) {
+            {SectionWhyChooseUsData2.map((SectionWhyChooseUs) => {
+              if (!SectionWhyChooseUs?.id) {
                 return <div className="w-[360px] h-[256px] relative"></div>;
               }
               return (
                 <div
                   className="w-[360px] h-[256px] relative"
-                  key={WhyChooseUs.id}
+                  key={SectionWhyChooseUs.id}
                 >
                   <p className="text-[#E7E7E7] text-[128px] font-bold leading-[120%] tracking-[0%]">
-                    {`0${WhyChooseUs.id}`}
+                    {`0${SectionWhyChooseUs.id}`}
                   </p>
                   <div className="absolute top-[80px] left-[100px]">
-                    <img src={WhyChooseUs.content.image} />
+                    <img src={SectionWhyChooseUs.content.image} />
                     <p className="text-[#FAB107] font-bold text-[20px] leading-[130%] tracking-[0%]">
-                      {WhyChooseUs.content.title}
+                      {SectionWhyChooseUs.content.title}
                     </p>
                     <p className="font-normal w-[264px] text-[14px] leading-[150%] tracking-[0%] text-[#262626]">
-                      {WhyChooseUs.content.text}
+                      {SectionWhyChooseUs.content.text}
                     </p>
                   </div>
                 </div>
