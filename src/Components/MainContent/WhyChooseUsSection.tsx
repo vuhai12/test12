@@ -13,6 +13,7 @@ const WhyChooseUsSection = () => {
             const isEven = WhyChooseUs.id % 2 === 0;
             return (
               <div
+                key={WhyChooseUs.id}
                 className={`flex justify-between items-center ${
                   isEven ? "flex-row-reverse" : ""
                 }`}
@@ -47,7 +48,10 @@ const WhyChooseUsSection = () => {
                 return <div className="w-[360px] h-[256px] relative"></div>;
               }
               return (
-                <div className="w-[360px] h-[256px] relative">
+                <div
+                  className="w-[360px] h-[256px] relative"
+                  key={WhyChooseUs.id}
+                >
                   <p className="text-[#E7E7E7] text-[128px] font-bold leading-[120%] tracking-[0%]">
                     {`0${WhyChooseUs.id}`}
                   </p>
