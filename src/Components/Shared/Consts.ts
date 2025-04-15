@@ -69,54 +69,54 @@ export const CustomReviewDatas = [
   },
 ];
 
-export const ChooseUsSectionDatas = [
+export const WhyChooseUsData2 = [
   {
+    id: 1,
     content: {
       image: Task,
       title: "  Lorem ipsum",
       text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    number: "01",
   },
   {
+    id: 2,
     content: {
       image: Task,
       title: "  Lorem ipsum",
       text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    number: "02",
   },
   {
+    id: 3,
     content: {
       image: Task,
       title: "  Lorem ipsum",
       text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    number: "03",
   },
   {
+    id: undefined,
     content: {
       image: "",
       title: " ",
       text: " ",
     },
-    number: "",
   },
   {
+    id: 4,
     content: {
       image: Task,
       title: "  Lorem ipsum",
       text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    number: "04",
   },
   {
+    id: 5,
     content: {
       image: Task,
       title: "  Lorem ipsum",
       text: " Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
-    number: "05",
   },
 ];
 
