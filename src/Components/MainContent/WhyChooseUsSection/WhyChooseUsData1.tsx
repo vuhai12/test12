@@ -15,7 +15,7 @@ const WhyChooseUsData1 = ({ whyChooseUsData, isEven }: Props) => {
   return (
     <div
       key={whyChooseUsData.id}
-      className={`flex justify-between items-center ${
+      className={`flex justify-between z-10 items-center ${
         isEven ? "flex-row-reverse" : ""
       }`}
     >

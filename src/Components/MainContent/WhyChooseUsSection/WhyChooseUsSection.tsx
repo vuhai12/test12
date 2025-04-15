@@ -13,16 +13,19 @@ const WhyChooseUsSection = () => {
           Why choose us?
         </p>
 
-        {SectionWhyChooseUsData1.map((SectionWhyChooseUs) => {
-          const isEven = SectionWhyChooseUs.id % 2 === 0;
-          return (
-            <WhyChooseUsData1
-              isEven={isEven}
-              whyChooseUsData={SectionWhyChooseUs}
-              key={SectionWhyChooseUs.id}
-            />
-          );
-        })}
+        <div className="relative z-10 flex flex-col gap-[80px]">
+          <div className="absolute left-1/2 top-[160px] bottom-0 border-l h-[620px] border-dashed border-gray-500 z-0"></div>
+          {SectionWhyChooseUsData1.map((SectionWhyChooseUs) => {
+            const isEven = SectionWhyChooseUs.id % 2 === 0;
+            return (
+              <WhyChooseUsData1
+                isEven={isEven}
+                whyChooseUsData={SectionWhyChooseUs}
+                key={SectionWhyChooseUs.id}
+              />
+            );
+          })}
+        </div>
 
         <div className="flex gap-[20px] flex-wrap mt-[50px]">
           {SectionWhyChooseUsData2.map((SectionWhyChooseUs, index) => {
