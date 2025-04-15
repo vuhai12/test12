@@ -1,5 +1,9 @@
 import ArrowRight from "@/assets/images/arrow-right.svg";
 import RequestImage from "@/assets/images/image-request.svg";
+import { InputDatas } from "@/Components/Shared/Consts";
+import Button from "@/Components/UI/Button";
+import Input from "@/Components/UI/Input";
+import Label from "@/Components/UI/Label";
 
 const RequestQuoteSection = () => {
   return (
@@ -12,46 +16,31 @@ const RequestQuoteSection = () => {
           <p className="text-[14px] font-normal leading-[150%] tracking-[0%]">
             Please fill the form below and we will contact you.
           </p>
-          <div className="flex flex-col gap-[6px]">
-            <label className="text-[14px] font-medium text-[#262626]">
-              Your name
-            </label>
-            <input
-              placeholder="Full name"
-              className="w-[525px] h-[40px]  border-[0.5px] border-[#BDBDBD] pl-[12px] text-[14px] text-[#262626]"
-            />
+          {InputDatas.map((InputData) => {
+            return (
+              <div className="flex flex-col gap-[6px]" key={InputData.id}>
+                <Label text={InputData.lable} />
+                <Input placeholder={InputData.placeholder} />
+              </div>
+            );
+          })}
+          {/* <div className="flex flex-col gap-[6px]">
+            <Label text="Your name" />
+            <Input placeholder="Full name" />
+          </div> */}
+          {/* <div className="flex flex-col gap-[6px]">
+            <Label text="Phone number" />
+            <Input placeholder="Phone number" />
           </div>
           <div className="flex flex-col gap-[6px]">
-            <label className="text-[14px] font-medium text-[#262626]">
-              Phone number
-            </label>
-            <input
-              placeholder="Phone number"
-              className="w-[525px] h-[40px] border-[0.5px] border-[#BDBDBD]  pl-[12px] text-[14px] text-[#262626]"
-            />
+            <Label text="Your email" />
+            <Input placeholder="Your email" />
           </div>
           <div className="flex flex-col gap-[6px]">
-            <label className="text-[14px] font-medium text-[#262626]">
-              Your email
-            </label>
-            <input
-              placeholder="Your email"
-              className="w-[525px] h-[40px] border-[0.5px] border-[#BDBDBD]  pl-[12px] text-[14px] text-[#262626]"
-            />
-          </div>
-          <div className="flex flex-col gap-[6px]">
-            <label className="text-[14px] font-medium text-[#262626]">
-              Your message
-            </label>
-            <input
-              placeholder="Your message"
-              className="w-[525px] h-[40px] border-[0.5px] border-[#BDBDBD]  pl-[12px] text-[14px] text-[#262626]"
-            />
-          </div>
-          <button className="w-[160px] flex justify-center gap-3 items-center text-white h-[36px] bg-[#FAB107] ml-auto">
-            <span>Submit</span>
-            <img src={ArrowRight} />
-          </button>
+            <Label text="Your message" />
+            <Input placeholder="Your message" />
+          </div> */}
+          <Button text="Submit" icon={ArrowRight} />
         </form>
         <img
           src={RequestImage}

@@ -28,7 +28,7 @@ const Footer = () => {
               <div className="flex flex-col gap-3 mt-5">
                 {FooterDatas.contact.map((FooterData) => {
                   return (
-                    <div className="flex gap-3 text-white">
+                    <div className="flex gap-3 text-white" key={FooterData.id}>
                       <img src={FooterData.img} />
                       <span>{FooterData.name}</span>
                       <span>{FooterData.text}</span>
@@ -42,7 +42,13 @@ const Footer = () => {
                 </p>
                 <div className="flex gap-5">
                   {FooterDatas.social.imgs.map((FooterData) => {
-                    return <img src={FooterData.img} alt={FooterData.name} />;
+                    return (
+                      <img
+                        src={FooterData.img}
+                        alt={FooterData.name}
+                        key={FooterData.id}
+                      />
+                    );
                   })}
                 </div>
               </div>
@@ -50,7 +56,7 @@ const Footer = () => {
             <div className="flex gap-5">
               {FooterDatas.officeType.map((FooterData) => {
                 return (
-                  <div>
+                  <div key={FooterData.id}>
                     <p className="text-[20px] text-white font-bold leading-[130%] tracking-[0%]">
                       {FooterData.name}
                     </p>

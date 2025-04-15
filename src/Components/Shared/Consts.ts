@@ -173,16 +173,19 @@ export const FooterDatas = {
     "No. 3, 29/70/19 Khuong Ha Street, Thanh Xuan District, Hanoi, Vietnam",
   contact: [
     {
+      id: 1,
       img: IconPhoneFooter,
       name: "Phone",
       text: "0922063999",
     },
     {
+      id: 2,
       img: IconFaxFooter,
       name: "Fax",
       text: "(+84) 922 063 999",
     },
     {
+      id: 3,
       img: IconMailFooter,
       name: "Email",
       text: "ngcons.connection@gmail.com",
@@ -191,18 +194,43 @@ export const FooterDatas = {
   social: {
     title: "Follow Us On",
     imgs: [
-      { name: "IconYoutube", img: IconYoutube },
-      { name: "IconFacebook", img: IconFacebook },
+      { id: 1, name: "IconYoutube", img: IconYoutube },
+      { id: 2, name: "IconFacebook", img: IconFacebook },
     ],
   },
   officeType: [
     {
+      id: 1,
       name: "Company office",
       img: ImageCompany,
     },
     {
+      id: 2,
       name: "Branch office",
       img: ImageMap,
     },
   ],
 };
+
+export const InputDatas = [
+  {
+    id: 1,
+    lable: "Your name",
+    placeholder: "Full name",
+  },
+  {
+    id: 2,
+    lable: "Phone number",
+    placeholder: "Phone number",
+  },
+  {
+    id: 3,
+    lable: "Your email",
+    placeholder: "Your email",
+  },
+  {
+    id: 4,
+    lable: "Your message",
+    placeholder: "Your message",
+  },
+];
