@@ -11,7 +11,7 @@ type Props = {
 
 const WhyChooseUsData2 = ({ whyChooseUsData }: Props) => {
   return (
-    <div className="w-[360px] h-[256px] relative" key={whyChooseUsData.id}>
+    <div className="w-[360px] h-[256px] relative">
       <p className="text-[#E7E7E7] text-[128px] font-bold leading-[120%] tracking-[0%]">
         {`0${whyChooseUsData.id}`}
       </p>

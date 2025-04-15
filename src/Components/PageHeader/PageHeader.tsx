@@ -12,7 +12,7 @@ const PageHeader = () => {
         <img className="w-[264px] h-[40px]" src={Logo} alt="logo" />
         <ul className="flex gap-[40px] text-white font-bold text-[16px] leading-[140%] tracking-[0%]">
           {links.map((link) => (
-            <Link page={link} />
+            <Link page={link} key={link} />
           ))}
         </ul>
       </div>

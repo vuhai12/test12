@@ -25,9 +25,14 @@ const WhyChooseUsSection = () => {
         })}
 
         <div className="flex gap-[20px] flex-wrap mt-[50px]">
-          {SectionWhyChooseUsData2.map((SectionWhyChooseUs) => {
+          {SectionWhyChooseUsData2.map((SectionWhyChooseUs, index) => {
             if (!SectionWhyChooseUs?.id) {
-              return <div className="w-[360px] h-[256px] relative"></div>;
+              return (
+                <div
+                  className="w-[360px] h-[256px] relative"
+                  key={`placeholder-${index}`}
+                ></div>
+              );
             }
             return (
               <WhyChooseUsData2
